@@ -132,8 +132,9 @@
       <exclude name="kilim/examples/**" />
       <exclude name="kilim/bench/**" />
       <manifest>
-	<attribute name="Main-Class" value="kilim.tools.Weaver"/>
-      </manifest>	
+          <attribute name="Main-Class" value="kilim.tools.Weaver"/>
+          <attribute name="Premain-Class" value="kilim.tools.Transformer"/>
+      </manifest>
     </jar>
     <jar jarfile="kilim-runtime.jar" basedir="classes">
       <exclude name="kilim/test/**" />
